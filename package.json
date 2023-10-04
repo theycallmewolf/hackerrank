@@ -1,0 +1,19 @@
+{
+  "name": "delete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "plus-minus": "tsc day-1/plus-minus.ts && node day-1/plus-minus.js",
+    "min-max-sum": "tsc day-1/min-max-sum.ts && node day-1/min-max-sum.js",
+    "diagonal-difference": "tsc day-2/diagonal-difference.ts && node day-2/diagonal-difference.js",
+    "counting-sort": "tsc day-2/counting-sort.ts --target es2015 && node day-2/counting-sort.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
