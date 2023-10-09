@@ -21,10 +21,10 @@ async function getNumTransactions(username) {
   }
 
   async function getTransactionsCount(userId) {
-    const url = (userId) => `https://jsonmock.hackerrank.com/api/transactions?&userId=${userId}`;
+    const url = `https://jsonmock.hackerrank.com/api/transactions?&userId=${userId}`;
 
     try {
-      const res = await fetch(url(userId));
+      const res = await fetch(url);
       const resJson = await res.json();
       return resJson.total;
     } catch (err) {
